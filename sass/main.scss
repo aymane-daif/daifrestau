@@ -1,0 +1,319 @@
+//customize colars
+$theme-colors: (
+    "primary" : #C59D5F
+);
+
+//import bootstrap
+@import "../bootstrap/scss/bootstrap";
+
+
+
+// basic styling
+h1#txt-img {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #715A37;
+}
+h2,h3 {
+    font-family: 'Herr Von Muellerhoff', cursive;
+   
+    color:  #C59D5F;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #252525;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+p {color: #757575;}
+a {
+    color: #C59D5F; 
+    text-decoration: none;
+}
+//utilities
+.box-text {
+    .head {
+        margin: 0;
+        font-size: 6rem;
+    }
+    .p-head {
+        
+        margin-top: -2rem;
+        font-size: 3rem;
+        color: #252525;
+    }
+    a {
+        border-bottom: 4px solid #c59d5f;
+        padding-bottom: 1px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        &:hover {
+            color: darken(#c59d5f, 30%);
+            text-decoration: none;
+            border-color: darken(#c59d5f, 30%);
+        }
+    }
+    
+}
+
+.curve {
+    margin: 0 auto;
+    display: block;
+    margin-top: -3.2rem;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+    color: #f4f4f4;
+}
+.icon1 {
+    display: block;
+    margin-top: -2.4rem;
+    position: relative;
+    left: 49.6%;
+    width: fit-content;
+    font-size: 1.4rem;
+    color: #C59D5F;
+    z-index: 20;
+    @media (max-width: 768px) {
+        left: 49%;
+    }
+}
+
+//header
+#header {
+    background: url('../img/showcase.jpg') no-repeat bottom center/cover;
+    height: 100vh;
+    position: relative;
+    
+    .navbar {
+        height: 5rem;
+        &-nav {
+            margin-left: auto;
+            .nav-link {
+                color: #fff;
+                border-bottom: 5px solid transparent;
+                padding: 0;
+                margin-right: 1.5rem;
+                padding-bottom: .5rem;
+                &:hover {
+                    border-bottom: 5px solid #FFBC00;
+                    width: fit-content;
+                }
+            }
+            .dropdown-menu {
+                background: rgba(#715A37,.5);
+                .dropdown-item {
+                    color: #f4f4f4;
+                    &:hover,
+                    &:active,
+                    &:visited {
+                        color: #f4f4f4;
+                        background: #715A37;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    .heading {
+        height: calc(100% - 5rem);
+        &-content {
+            h1 {
+                font-size: 7rem;
+                margin: 0;
+            }
+            p {
+                color: #f4f4f4;
+                margin: 0;
+                font-size: 2rem;
+                font-weight: 600;
+                span {
+                    font-family: 'Herr Von Muellerhoff', cursive;
+                    font-size: 2.5rem;
+                    margin-right: 1rem;
+                }
+            }
+            a {
+                color: #f4f4f4;
+            }
+            
+        }
+    }
+    
+}
+//discover 
+#discover {
+    a {
+        text-decoration: none;
+    }
+    
+    .discover-text {
+        .head {
+            margin: 0;
+            font-size: 6rem;
+        }
+        .p-head {
+            
+            margin-top: -2rem;
+            font-size: 3rem;
+            color: #252525;
+        }
+        a {
+            border-bottom: 4px solid #c59d5f;
+            padding-bottom: 1px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            &:hover {
+                color: darken(#c59d5f, 30%);
+                text-decoration: none;
+                border-color: darken(#c59d5f, 30%);
+            }
+        }
+        
+    }
+}
+//bg1
+#bg1 {
+    background: url('../img/section3.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 20rem;
+    .box-text {
+        .p-head {
+            color: #f4f4f4;
+        }
+    }
+}
+//reservation
+#reservation {
+    img {
+        height: 10rem;
+        width: 100%;
+    }
+}
+//bg2
+#bg2 {
+    background: url('../img/section1.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 20rem;
+    .box-text {
+        .p-head {
+            color: #f4f4f4;
+        }
+    }
+}
+//menu 
+#menu {
+    .menu {
+        width: 60%;
+        margin: 2rem auto;
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+        > div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            padding: 1rem 1.5rem 0.75rem 1.5rem;
+            p {
+                margin: 0;
+            }
+            .dish-name {
+                color: #141414;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+        .price {
+            align-self: center;
+            font-weight: 700;
+            color: #C59D5F;
+            font-size: 1.2rem;
+        }
+    }
+}
+//testimonials
+#testimonials {
+    .p-head {
+        margin-top: -1rem;
+        font-size: 1.5rem;
+    }
+    .testimonials {
+        #slider {
+            width: 70%;
+            margin: 3rem auto;
+            background-color: rgba(#c59d5f,.55);
+            padding: 2rem 1rem .75rem 1.75rem;
+            height: 20rem;
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+            @media (max-width: 768px) {
+                height: 23rem;
+                width: 100%;
+            }
+            .carousel-indicators {
+                li {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    background-color: #715A37;
+               } 
+            }
+            .msg {
+                color: #333;
+            }
+            .user {
+                margin: 2rem 0;
+                img {
+                    border-radius: 50%;
+                    width: 5rem;
+                }
+                p {font-weight: 600;margin-top: 5px;}
+                
+            }
+            
+        }
+    }
+}
+//footer
+#footer {
+    padding: 2rem 0;
+    background-color: #141414;
+    .curve {
+        margin-top: -5.2rem;
+    }
+    img {
+        margin-bottom: 1.5rem;
+    }
+    .about {
+        letter-spacing: 2px;
+        line-height: 1.7;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+            i {
+                color: #715A37;
+            }
+        }
+        i {
+            color: #f4f4f4;
+            margin-right: 1rem;
+            font-size: 1.4rem;
+        }
+    }
+    .input-group-text {
+        background: #C59D5F;
+        border-color: #C59D5F;
+        color: #141414;
+    }
+    
+}
